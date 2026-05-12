@@ -21,7 +21,7 @@ template=PromptTemplate(
 
 chain=template | model | parser
 
-res=chain.invoke()
+res=chain.invoke({})
 print(res)
 
 
