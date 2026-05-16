@@ -17,6 +17,7 @@ prompt2=PromptTemplate(
 )
 
 parser=StrOutputParser()
+model=ChatOpenAI()
 
 parallechain=RunnableParallel({
     'tweet':Runnablesequence(prompt1,model,parser),
