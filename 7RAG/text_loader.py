@@ -26,6 +26,7 @@ docs = loader.load()
 print(chain.invoke({'poem':docs[0].page_content}))
 
 print(docs)
+print(docs[0])
 
 print(docs[0].page_content)
 print(docs[0].metadata)
